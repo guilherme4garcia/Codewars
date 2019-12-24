@@ -1,13 +1,16 @@
-number = -32
-soma = 0
+#Write a function named sumDigits which takes a number as input
+#and returns the sum of the absolute value of each of the number's decimal digits.
 
 
-if number < 0:
-    number = number * (-1)
+def sum_digits(number):
+    
+    if number < 0:
+        number = number * (-1)
 
-s = str(number)
-
-for dig in s:
-    soma += int(dig)
-
-print(soma)
+    s = str(number)
+    sum = 0
+    
+    for dig in s:
+        sum += int(dig)
+    
+    return sum
